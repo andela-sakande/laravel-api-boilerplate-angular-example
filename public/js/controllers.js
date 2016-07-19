@@ -130,7 +130,7 @@ bookWishlistAppControllers.controller('MainController', ['$scope', '$location', 
 
 	}
 
-	$scope.delete = function(bookId){
+	$scope.remove = function(bookId){
 
 		if(confirm('Are you sure to remove this book from your wishlist?')){
 			bookService.remove(bookId, function(){
